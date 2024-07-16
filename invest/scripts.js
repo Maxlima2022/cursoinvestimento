@@ -3,7 +3,7 @@ const courses = [
         title: "Introdução ao Mercado de Ações",
         description: "O Que é o Mercado de Ações?",
         content: "Definição do Mercado de Ações. <p> O mercado de ações é um ambiente onde são negociadas partes de propriedade de empresas, chamadas de ações. Cada ação representa uma fração do capital social da empresa e confere ao seu detentor (acionista) direitos e responsabilidades como sócio da companhia.",
-        videoUrl: "invest/video/invideo-ai-1080 Introdução ao Mercado de Ações_ O que é_ 2024-07-16.mp4" // Coloque o caminho do vídeo do curso de HTML aqui
+        videoUrl: "invideo-ai-1080 Introdução ao Mercado de Ações_ O que é_ 2024-07-16.mp4" // Coloque o caminho do vídeo do curso de HTML aqui
     },
 {
     title:"Objetivo do Mercado de Ações",
