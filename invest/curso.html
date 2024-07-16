@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investindo na Bolsa de Valores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    background-image: url('invest.jpg'); /* Caminho para sua imagem */
+    background-color: #f0f8ff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url('innovative.jpg'); /* Caminho para sua imagem */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2 {
+    text-align: left;
+    text-decoration: none;
+    border: #007BFF;
+    
+   
+}
+.course-list {
+    margin-bottom: 20px;
+}
+
+.course-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+.course-item:hover {
+    background-color: #e9e9e9;
+}
+
+.course-detail {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries para responsividade */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .course-item {
+        padding: 15px;
+    }
+
+    .course-detail {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .course-item {
+        padding: 20px;
+    }
+
+    .course-detail {
+        padding: 20px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+</style>
+
+<body>
+  
+    <body>
+        <div class="container">
+            
+        <h1>Curso de Finanças</h1>
+ 
+            <div id="course-list" class="course-list"></div>
+            <div id="course-detail" class="course-detail">
+                <button id="back-btn">Voltar</button>
+                <div id="course-content"></div>
+                <video id="course-video" controls style="width: 60%; margin-top: 20px;">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+              
+            </div>
+            <a href="index.html"><h2>Sair</h2></a>
+        </div>
+        
+        <script src="scripts.js"></script>
+        <footer></footer>
+    </body>
+    </html>

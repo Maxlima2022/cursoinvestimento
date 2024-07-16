@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Biblioteca de Leituras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="login-container" id="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="Jack" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="login-error" class="error-message"></p>
+    </div>
+    
+    <div class="library-container" id="library-container" style="display: none;">
+        <h2>Conteúdo do Curso</h2>
+        <div id="file-list">
+            <center> <button id="prev-page"><a href="curso.html" id="stored-pdf">Acessar</a></button></center>
+        </div>
+        <div id="pdf-container" style="display: none;">
+            <button id="close-pdf">Fechar PDF</button>
+            <canvas id="pdf-render"></canvas>
+            <div id="navigation-controls">
+                <button id="prev-page">Página Anterior</button>
+                <button id="next-page">Próxima Página</button>
+                <span id="page-info"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
