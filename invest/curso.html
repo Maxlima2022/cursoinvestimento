@@ -118,7 +118,28 @@ button:hover {
         font-size: 14px;
     }
 }
+/* Estilos para links */
+.styled-link {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
 
+/* Link visitado */
+.styled-link:visited {
+    color: #551A8B;
+}
+
+/* Link ao passar o mouse */
+.styled-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Link ativo */
+.styled-link:active {
+    color: #ff0000;
+}
 </style>
 
 <body>
@@ -127,7 +148,7 @@ button:hover {
         <div class="container">
             
         <h1>Curso de Finanças</h1>
-    <a href="index.html" class="styled-link><h2>Sair</h2></a>
+    <a href="index.html" class="styled-link"><h2>Sair</h2></a>
             <div id="course-list" class="course-list"></div>
             <div id="course-detail" class="course-detail">
                 <button id="back-btn">Voltar</button>
